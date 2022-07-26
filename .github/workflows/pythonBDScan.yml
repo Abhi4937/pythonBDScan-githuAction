@@ -21,7 +21,7 @@ jobs:
           architecture: x64
       - name: install dependencies
         run: |
-          py -m pip freeze > requirements.txt
+          python -m pip freeze > requirements.txt
           py -m pip install -r requirements.txt
         
       
