@@ -1,0 +1,21 @@
+name: PYTHON
+on:
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  scan_job:
+    runs-on: [self-hosted, Linux]
+    strategy:
+      matrix:
+        python-version: ["2.x", "3.x"]
+    steps:
+      - name: Check-out
+        uses: actions/checkout@v2
+      - name: setup python environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.python-version}}
+      
