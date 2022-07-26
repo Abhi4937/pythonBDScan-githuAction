@@ -22,6 +22,6 @@ jobs:
       - name: install dependencies
         run: |
           python -m pip freeze > requirements.txt
-          py -m pip install -r requirements.txt
+         
         
       
