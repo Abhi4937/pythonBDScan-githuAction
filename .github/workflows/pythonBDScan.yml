@@ -19,7 +19,7 @@ jobs:
           pwd
           ls -a
           echo $PATH
-          cd /home/runner/
+          cd /home/runner/work/pythonBDScan-githuAction/pythonBDScan-githuAction
           ls -a
       - name: setup python environment
         uses: actions/setup-python@v2
