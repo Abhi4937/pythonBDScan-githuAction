@@ -19,6 +19,8 @@ jobs:
           pwd
           ls -a
           echo $PATH
+          cd ./home/runner/work
+          ls -a
       - name: setup python environment
         uses: actions/setup-python@v2
         with:
