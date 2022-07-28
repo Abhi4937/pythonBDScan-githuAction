@@ -15,10 +15,7 @@ jobs:
       - name: Check-out
         uses: actions/checkout@v2
       - name: folders in runner
-        run: |
-          pwd
-          ls -a
-          echo $PATH
+        run: ls
       - name: setup python environment
         uses: actions/setup-python@v2
         with:
